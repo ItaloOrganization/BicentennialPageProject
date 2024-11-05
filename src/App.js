@@ -17,6 +17,7 @@ function App() {
 
 
         <h1>Feature1</h1>
+        <h1>Release V1.0.2</h1>
 
 
 
