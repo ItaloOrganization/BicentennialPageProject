@@ -38,7 +38,7 @@ jobs:
 
           cd /var/www/html
           sudo rm -rf /var/www/html/*
-          # Clonar o actualizar el repositorio
+          # Clonar o actualizar el repositorio sip
           if [ -d ".git" ]; then
               sudo git pull origin main
           else
