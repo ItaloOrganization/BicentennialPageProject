@@ -46,7 +46,7 @@ jobs:
           fi
           
           # Instalar dependencias y construir la aplicación
-          cd ReactMaquinaVirtual
+          cd BicentennialPageProject
           sudo apt-get install nodejs -y
           sudo npm install
 
