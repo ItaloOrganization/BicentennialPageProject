@@ -43,7 +43,7 @@ jobs:
         env:
           HOST: ${{ secrets.REMOTE_HOST }}
 
-      # 7. Instalar Apache2 en el servidor si no está instalado
+      # 7. Instalar Apache2 en el servidor si no está instalado jaja
       - name: Instalar Apache2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@$HOST << 'EOF'
