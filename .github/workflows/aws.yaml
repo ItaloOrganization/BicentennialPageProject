@@ -1,4 +1,4 @@
-name: Deploy en AWS Lightsail
+name: Deploy React App en AWS Lightsail
 
 on:
   push:
@@ -7,73 +7,61 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # 1. Clonar el código desde otro repositorio (modifica la URL según sea necesario)
-      - name: Clone project repository Si
-        run: |
-          git clone https://github.com/ItaloOrganization/BicentennialPageProject.git .
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      # 2. Instalar Node.js para cualquier proyecto React
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'  # Ajustar según la versión necesaria
-
-      # 3. Instalar las dependencias del proyecto
-      - name: Install dependencies
-        run: |
-          npm install
-
-      # 4. Construir el proyecto React
-      - name: Build React app
-        run: |
-          npm run build
-
-      # 5. Configurar la conexión SSH
-      - name: Configurar SSH
+      - name: Conexion SSH
         uses: webfactory/ssh-agent@v0.5.3
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      # 6. Agregar el servidor al archivo known_hosts ajjaja
-      - name: Agregar host a known_hosts
-        run: |
-          ssh-keyscan -v -H $HOST >> ~/.ssh/known_hosts
-        env:
-          HOST: ${{ secrets.REMOTE_HOST }}
 
-      # 7. Instalar Apache2 en el servidor si no está instalado jaja
-      - name: Instalar Apache2
+
+      - name: Instalar Node.js y npm en Lightsail
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@$HOST << 'EOF'
+          ssh -o StrictHostKeyChecking=no ubuntu@54.166.15.28 << 'EOF'
+          # Instalar Node.js y npm si no están instalados
+          sudo rm -rf /var/www/html/*
+          curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
           sudo apt update
+          sudo apt upgrade -y
           sudo apt install apache2 -y
-          sudo systemctl enable apache2  # Habilitar Apache para arrancar automáticamente
+
+
+          sudo apt install -y nodejs
           EOF
-        env:
-          HOST: ${{ secrets.REMOTE_HOST }}
 
-      # 8. Crear el directorio en el servidor si no existe
-      - name: Crear directorio en el servidor
+      - name: Despliegue en Lightsail
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@$HOST "sudo mkdir -p /var/www/html && sudo chown -R ubuntu:ubuntu /var/www/html"
-        env:
-          HOST: ${{ secrets.REMOTE_HOST }}
+          ssh -o StrictHostKeyChecking=no ubuntu@54.166.15.28 << 'EOF'
 
-      # 9. Transferir archivos de build a Lightsail
-      - name: Transferir archivos de build a Lightsail
-        run: |
-          rsync -avz --delete build/ ubuntu@$HOST:/var/www/html/
-        env:
-          HOST: ${{ secrets.REMOTE_HOST }}
-          USER: ubuntu
+          cd /var/www/html
+          sudo rm -rf /var/www/html/*
+          # Clonar o actualizar el repositorio
+          if [ -d ".git" ]; then
+              sudo git pull origin main
+          else
+              sudo git clone https://github.com/ItaloOrganization/BicentennialPageProject.git
+          fi
+          
+          # Instalar dependencias y construir la aplicación
+          cd ReactMaquinaVirtual
+          sudo apt-get install nodejs -y
+          sudo npm install
 
-      # 10. Reiniciar Apache para cargar los cambios
-      - name: Reiniciar servidor Apache
-        run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@$HOST << 'EOF'
-          sudo systemctl restart apache2  # Ajusta esto si usas Nginx u otro servidor
+
+          sudo fallocate -l 1G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          echo "/swapfile swap swap defaults 0 0" | sudo tee -a /etc/fstab
+
+
+          sudo npm run build
+          
+
+
+          # Mover los archivos de construcción a la carpeta raíz del servidor
+          sudo cp -r build/* /var/www/html
           EOF
-        env:
-          HOST: ${{ secrets.REMOTE_HOST }}
