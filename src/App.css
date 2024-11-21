@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
 /* Estilos para toda la aplicación */
 body {
   margin: 0;
@@ -11,16 +14,38 @@ body {
 }
 
 .left-section {
-  background-color: #d3d3d3;
-  width: 20%; /* Ajusta el ancho de la sección izquierda */
+  background-image: url('./Images/Izquierda.png'); /* Ruta de tu imagen */
+  background-size: auto 100%; /* Ajusta la altura al 100% del contenedor, manteniendo la proporción */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat;
+  width: 15%; 
+  height: 100%;
   border-right: 5px solid red;
 }
 
+
 .right-section {
-  background-color: #1c1c1c;
+  background-image: url('./Images/Derecha.png'); /* Ruta de tu imagen */
   flex: 1;
   position: relative;
 }
+.top-section {
+  background-image: url('./Images/Derecha.png'); /* Ruta de tu imagen */
+  background-size: auto 100%; /* Ajusta para cubrir todo el espacio */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repeticiones */
+  height: 20%; /* Define la mitad del contenedor padre */
+  width: 100%;
+}
+.bottom-section {
+  background-image: url('./Images/fondoderechaabajo.png');
+  background-size: auto 90%;
+  background-position: center 70px; /* Mueve el fondo más abajo */
+  background-repeat: no-repeat;
+  height: 80%;
+  width: 100%;
+}
+
 
 /* Línea horizontal en la sección derecha, ajustada hacia arriba */
 .horizontal-line {
@@ -36,12 +61,44 @@ body {
 /* Círculo en la intersección de las líneas */
 .circle {
   position: absolute;
-  top: 20%; /* Alinear con la línea horizontal ajustada */
+  top: 20%;
   left: 0;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background-color: blue;
   border: 5px solid red;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
+
+.circlee {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-color: blue; 
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-section .lorem-text {
+  position: absolute;
+  top: 30%; /* Calcula el 10% después del 20% superior para quedar en el 80% inferior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%);
+  color: white; /* Color del texto */
+  font-size: 30px; /* Tamaño del texto ajustado */
+  font-family: 'Courgette', cursive; /* Aplica la fuente Courgette */
+  width: 100%; /* Define un ancho fijo para limitar el texto */
+  text-align: center; /* Centra el texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  white-space: normal; /* Permite el ajuste automático del texto */
+}
+
+
+
+
+
+
