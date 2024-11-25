@@ -84,10 +84,6 @@ body {
 }
 
 .bottom-section .lorem-text {
-  position: absolute;
-  top: 30%; /* Calcula el 10% después del 20% superior para quedar en el 80% inferior */
-  left: 50%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%);
   color: white; /* Color del texto */
   font-size: 30px; /* Tamaño del texto ajustado */
   font-family: 'Courgette', cursive; /* Aplica la fuente Courgette */
@@ -95,7 +91,13 @@ body {
   text-align: center; /* Centra el texto */
   line-height: 1.5; /* Espaciado entre líneas */
   white-space: normal; /* Permite el ajuste automático del texto */
+  position: relative;
+  top: 5%;
 }
+
+
+
+
 
 
 
