@@ -37,8 +37,7 @@ body {
   height: 20%; /* Define la mitad del contenedor padre */
   width: 100%;
 }
-.bottom-section {
-  background-image: url('./Images/fondoderechaabajo.png');
+.bottom-section { 
   background-size: auto 90%;
   background-position: center 70px; /* Mueve el fondo más abajo */
   background-repeat: no-repeat;
@@ -104,3 +103,140 @@ body {
 
 
 
+.rectangulo {
+  width: 250px;
+  height: 350px;
+  background-color: transparent;
+  position: relative;
+  margin: 50px auto;
+  transition: transform 0.7s ease; /* Transición suave para el cambio de tamaño */
+}
+
+/* Pseudoelemento para el rectángulo superior izquierdo */
+.rectangulo::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20%;
+  height: 40%;
+  background-color: grey;
+}
+
+/* Pseudoelemento para el rectángulo inferior derecho */
+.rectangulo::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20%;
+  height: 40%;
+  background-color: grey;
+}
+
+/* Div negro interno */
+.rectangulo .inner {
+  width: 88%;
+  height: 90%;
+  background-color: black;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* Div con borde blanco */
+.rectangulo .border-only {
+  width: 80%;
+  height: 85%;
+  border: 3px solid white;
+  border-top-left-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Parte superior e inferior del borde blanco */
+.top, .bottom {
+  flex: 1;
+  display: flex;
+}
+
+/* Izquierda en la parte superior */
+.top .left {
+  flex: 1;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain; /* Asegura que la imagen se ajuste completamente */
+  background-position: center; /* Centra la imagen en el contenedor */
+}
+
+/* Derecha en la parte superior (dividido en 2 horizontalmente) */
+.top .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top .right .top-half {
+  flex: 1;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain; /* Asegura que la imagen se ajuste completamente */
+  background-position: center; /* Centra la imagen en el contenedor */
+}
+
+.top .right .bottom-half {
+  flex: 1;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain; /* Asegura que la imagen se ajuste completamente */
+  background-position: center; /* Centra la imagen en el contenedor */
+}
+
+/* Parte inferior completa */
+.bottom {
+  background-size: auto 90%;
+  background-color: black;
+}
+
+/* Estilo del texto dentro del rectángulo */
+.productos {
+  text-align: center;
+  color: gray;
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 20%; /* Ajusta la distancia del subrayado */
+  font-family: Arial, sans-serif;
+  position: relative;
+  top: 100%;
+  transition: color 0.3s ease; /* Transición suave */
+  z-index: 30;
+}
+
+/* Hover para cambiar el color del texto */
+.rectangulo:hover .productos {
+  color: white;
+}
+
+/* Estilo para el hover en el rectángulo */
+.rectangulo:hover {
+  transform: scale(10); /* Aumenta el tamaño al 110% */
+}
+
+
+.Contenedor-Rectangulos{
+  display: flex; /* Esto hará que los rectángulos estén en una fila */
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+  gap: 20px; /* Opcional: agrega espacio entre los rectángulos */
+}

@@ -16,47 +16,55 @@ function App() {
             Desde Sucre, ciudad blanca de los 4 nombres, cuna de la libertad latinoamericana, la<br />
             CAINCO Chuquisaca, te rinde homenaje de emprendimiento, empleo y oportunidad.
           </div>
+          <div className="Contenedor-Rectangulos"> 
+          <div class="rectangulo">
+            <div class="inner"></div>
+            <div class="border-only">
+              <div class="top">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="top-half"></div>
+                  <div class="bottom-half"></div>
+                </div>
+              </div>
+              <div class="bottom"></div>
+            </div>
+            <div class="productos">NUESTROS PRODUCTOS</div>
+          </div>
+
+          <div class="rectangulo">
+            <div class="inner"></div>
+            <div class="border-only">
+              <div class="top">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="top-half"></div>
+                  <div class="bottom-half"></div>
+                </div>
+              </div>
+              <div class="bottom"></div>
+            </div>
+            <div class="productos">NUESTROS PRODUCTOS</div>
+          </div>
+
+          <div class="rectangulo">
+            <div class="inner"></div>
+            <div class="border-only">
+              <div class="top">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="top-half"></div>
+                  <div class="bottom-half"></div>
+                </div>
+              </div>
+              <div class="bottom"></div>
+            </div>
+            <div class="productos">NUESTROS PRODUCTOS</div>
+          </div>
+          </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    </div>  
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
+    </div>
 
   );
 }
