@@ -12,7 +12,11 @@ function App() {
           <div className="circlee"></div>
         </div>
         <div className="bottom-section">
-          <div className="lorem-text">
+          <div   className="lorem-text"
+  style={{
+    fontSize: "23px",
+    color: "white"
+  }}>
             Desde Sucre, ciudad blanca de los 4 nombres, cuna de la libertad latinoamericana, la<br />
             CAINCO Chuquisaca, te rinde homenaje de emprendimiento, empleo y oportunidad.
           </div>
