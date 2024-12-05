@@ -231,7 +231,7 @@ body {
 
 /* Estilo para el hover en el rectángulo */
 .rectangulo:hover {
-  transform: scale(10); /* Aumenta el tamaño al 110% */
+  transform: scale(1.1); /* Aumenta el tamaño al 110% */
 }
 
 
