@@ -59,7 +59,9 @@ jobs:
 
 
           sudo npm run build
-          
+          npm install aos
+          npm install bootstrap
+
 
 
           # Mover los archivos de construcción a la carpeta raíz del servidor
