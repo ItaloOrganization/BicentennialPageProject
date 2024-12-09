@@ -241,6 +241,19 @@ body {
   gap: 20px; /* Opcional: agrega espacio entre los rectángulos */
 }
 
+.nav-tabs .nav-link {
+  padding-top: 5px; /* Reducir el padding superior */
+  padding-bottom: 5px; /* Reducir el padding inferior */
+}
+
+.nav-tabs .nav-link h4 {
+  margin-top: 5px; /* Ajustar la separación entre el título y el icono */
+  margin-bottom: 0; /* Reducir espacio bajo el texto */
+}
+
+.nav-tabs .nav-link img {
+  margin-bottom: 0; /* Quitar espacio extra debajo de la imagen */
+}
 
 
 

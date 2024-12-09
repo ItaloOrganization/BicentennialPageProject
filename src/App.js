@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import OtherPage from './OtherPage';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Home() {
   const navigate = useNavigate();

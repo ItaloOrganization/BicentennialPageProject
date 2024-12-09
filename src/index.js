@@ -4,6 +4,9 @@ import './index.css';
 import $ from 'jquery';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getFirestore, collection, getDocs, getCollections } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
