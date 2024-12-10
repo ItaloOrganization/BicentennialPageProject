@@ -342,7 +342,7 @@ body {
 
 .ContenedorPalacetes {
   width: 130%;
-  height: 550%;
+  height: 500%;
   background-color: transparent;
   top: 400%;
   left: 50%;
@@ -353,4 +353,24 @@ body {
   justify-content: space-around; /* Espaciado uniforme entre los elementos */
   align-items: center;         /* Centra verticalmente los elementos */
   gap: 20px;                   /* Espacio entre elementos (alternativa a justify-content) */
+}
+
+.footer{
+  position: relative;
+  top: 100000%;
+}
+
+.imagenytexto{
+  background-color: black;
+  z-index: -1;
+  height: 1000px;
+}
+
+.page-title{
+  background-color: black;
+  height: 250px;
+}
+
+.textob{
+  color: white;
 }

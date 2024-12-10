@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import OtherPage from './OtherPage';
 import './App.css'; 
+import Mas from './Mas';
 
 function Home() {
   const navigate = useNavigate();
@@ -96,6 +97,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/other-page" element={<OtherPage />} />
+        <Route path="/mas" element={<Mas/>} />
       </Routes>
     </Router>
   );
