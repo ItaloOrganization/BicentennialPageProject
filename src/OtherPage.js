@@ -2,8 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import AOS from 'aos';
-
+import './assets/css/main.css'
 import 'aos/dist/aos.css';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -32,24 +33,24 @@ function OtherPage() {
 
 
 
-        <link href="/assets/img/favicon.png" rel="icon" />
-        <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-        <link href="https://fonts.googleapis.com" rel="preconnect" />
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@100..900&family=Send+Flowers&display=swap"
-          rel="stylesheet" />
+      <link href="/assets/img/favicon.png" rel="icon" />
+      <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@100..900&family=Send+Flowers&display=swap"
+        rel="stylesheet" />
 
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
 
-        <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-        <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
-        <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-        <link href="/assets/css/main.css" rel="stylesheet" />
+      <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+      <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+      <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+      <link href="/assets/css/main.css" rel="stylesheet" />
 
 
       <body className="index-page">
@@ -86,1014 +87,226 @@ function OtherPage() {
           </div>
         </header>
 
-
-
-
-
-
-
-
-
-
-
-
         <main className="main">
 
           <section id="features" className="features section">
             <div className="container" data-aos="fade-up" data-aos-delay="100">
+              <ul className="CosasAmarillas">
 
-              <ul className="nav nav-tabs d-flex">
 
-                <li className="nav-item col-4 col-md-2 col-lg-1">
-                  <a className="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                    <div className="ic-border">
-                      <img src="/assets/img/option-icons/ic_small_palaces.svg" alt="Naza6760" />
+                <li class="nav-item col-4 col-md-2 col-lg-1">
+                  <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                    <div class="ic-border">
+                      <img src="assets/img/option-icons/ic_small_palaces.svg" alt="Naza6760" />
                     </div>
                     <h4>Palacetes</h4>
                   </a>
                 </li>
 
-                <li className="nav-item col-4 col-md-2 col-lg-1">
-                  <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                    <div className="ic-border">
-                      <img src="/assets/img/option-icons/ic_cathedrals.svg" alt="Naza6760" />
+
+                <li class="nav-item col-4 col-md-2 col-lg-1">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                    <div class="ic-border">
+                      <img src="assets/img/option-icons/ic_cathedrals.svg" alt="Naza6760" />
                     </div>
                     <h4>Catedrales</h4>
                   </a>
                 </li>
 
-                <li className="nav-item col-4 col-md-2 col-lg-1">
-                  <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-                    <div className="ic-border">
-                      <img src="/assets/img/option-icons/ic_museums.svg" alt="Naza6760" />
+                <li class="nav-item col-4 col-md-2 col-lg-1">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                    <div class="ic-border">
+                      <img src="assets/img/option-icons/ic_museums.svg" alt="Naza6760" />
                     </div>
                     <h4>Museos</h4>
                   </a>
                 </li>
 
-                <li className="nav-item col-4 col-md-2 col-lg-1">
-                  <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-                    <div className="ic-border">
-                      <img src="/assets/img/option-icons/ic_historical_monuments.svg" alt="Naza6760" />
+                <li class="nav-item col-4 col-md-2 col-lg-1">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+                    <div class="ic-border">
+                      <img src="assets/img/option-icons/ic_historical_monuments.svg" alt="Naza6760" />
                     </div>
-                    <h4>Monumentos Históricos</h4>
+                    <h4>Monumentos</h4>
                   </a>
                 </li>
 
-                <li className="nav-item col-4 col-md-2 col-lg-1">
-                  <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
-                    <div className="ic-border">
-                      <img src="/assets/img/option-icons/ic_historic_buildings.svg" alt="Naza6760" />
+                <li class="nav-item col-4 col-md-2 col-lg-1">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
+                    <div class="ic-border">
+                      <img src="assets/img/option-icons/ic_historic_buildings.svg" alt="Naza6760" />
                     </div>
-                    <h4>Edificios Históricos</h4>
+                    <h4>Edificios</h4>
                   </a>
                 </li>
 
-                <li className="nav-item col-4 col-md-2 col-lg-1">
-                  <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-6">
-                    <div className="ic-border">
-                      <img src="/assets/img/option-icons/ic_squares.svg" alt="Naza6760" />
+                <li class="nav-item col-4 col-md-2 col-lg-1">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-6">
+                    <div class="ic-border">
+                      <img src="assets/img/option-icons/ic_squares.svg" alt="Naza6760" />
                     </div>
-                    <h4>Plazas y Plazuelas</h4>
+                    <h4>Plazas</h4>
                   </a>
                 </li>
 
-                <li className="nav-item col-4 col-md-2 col-lg-1">
-                  <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-7">
-                    <div className="ic-border">
-                      <img src="/assets/img/option-icons/ic_parks.svg" alt="Naza6760" />
+                <li class="nav-item col-4 col-md-2 col-lg-1">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-7">
+                    <div class="ic-border">
+                      <img src="assets/img/option-icons/ic_parks.svg" alt="Naza6760" />
                     </div>
                     <h4>Parques</h4>
                   </a>
                 </li>
-
               </ul>
 
-              <div className="tab-content">
+
+              <div className='ContenedorCards1'>
+                <section id="features-tab-1" class="pricing section tab-pane fade active show">
+                  <h2 className='centroul'>PALACETES</h2>
+                  <div className='ContenedorPalacetes'>
 
 
-                <section id="features-tab-1" className="pricing section tab-pane fade active show">
 
 
-                  <div className="container section-title" data-aos="fade-up">
-                    <h2>PALACETES</h2>
+
+
+
+                  <div class="cardon" data-aos="zoom-in" data-aos-delay="100">
+                  <div id="top-w-block">
                   </div>
-
-                  <div className="container">
-
-                    <div className="second-container">
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="/assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="/assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="/assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="/assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
+                  <div id="card-main-block">
+                    <div id="top-body">
+                      <div id="title-body">
+                        <p>Palacete de</p>
+                        <div class="card-tittle text-center">
+                          <h3 class="send-flowers-regular">La Glorieta</h3>
                         </div>
                       </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
+                      <div id="top-body-content">
+                        <div id="body-left-side">
+                          <img src="assets/img/card-sources/glorieta-1.png" alt=""/>
                         </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
+                        <div id="body-right-side">
+                          <div id="right-side-top">
+                            <img src="assets/img/card-sources/glorieta-2.png" alt=""/>
                           </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
+                          <div id="right-side-bottom">
+                            <img src="assets/img/card-sources/glorieta-3.png" alt=""/>
                           </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
                         </div>
                       </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-
                     </div>
-
-                  </div>
-
-                </section>
-
-
-                <section id="features-tab-2" className="pricing section tab-pane fade">
-
-
-                  <div className="container section-title" data-aos="fade-up">
-                    <h2>CATEDRALES</h2>
-                  </div>
-
-                  <div className="container">
-
-                    <div className="second-container">
-
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                </section>
-
-                <section id="features-tab-3" className="pricing section tab-pane fade">
-
-                  <div className="container section-title" data-aos="fade-up">
-                    <h2>MUSEOS</h2>
-                  </div>
-
-                  <div className="container">
-
-                    <div className="second-container">
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                </section>
-
-                <section id="features-tab-4" className="pricing section tab-pane fade">
-
-
-                  <div className="container section-title" data-aos="fade-up">
-                    <h2>MONUMENTOS HISTÓRICOS</h2>
-                  </div>
-
-                  <div className="container">
-
-                    <div className="second-container">
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </section>
-
-
-                <section id="features-tab-5" className="pricing section tab-pane fade">
-
-
-                  <div className="container section-title" data-aos="fade-up">
-                    <h2>EDIFICIOS HISTÓRICOS</h2>
-                  </div>
-
-                  <div className="container">
-
-                    <div className="second-container">
-
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                </section>
-
-                <section id="features-tab-6" className="pricing section tab-pane fade">
-
-
-                  <div className="container section-title" data-aos="fade-up">
-                    <h2>PLAZAS Y PLAZUELAS</h2>
-                  </div>
-
-                  <div className="container">
-
-                    <div className="second-container">
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                </section>
-                <section id="features-tab-7" className="pricing section tab-pane fade">
-                  <div className="container section-title" data-aos="fade-up">
-                    <h2>PARQUES</h2>
-                  </div>
-
-                  <div className="container">
-
-                    <div className="second-container">
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-                      <div className="cardon" data-aos="zoom-in" data-aos-delay="100">
-                        <div id="top-w-block">
-                        </div>
-                        <div id="card-main-block">
-                          <div id="top-body">
-                            <div id="title-body">
-                              <p>Palacete de</p>
-                              <div className="card-tittle text-center">
-                                <h3 className="send-flowers-regular">La Glorieta</h3>
-                              </div>
-                            </div>
-                            <div id="top-body-content">
-                              <div id="body-left-side">
-                                <img src="../assets/img/card-sources/glorieta-1.png" alt="" />
-                              </div>
-                              <div id="body-right-side">
-                                <div id="right-side-top">
-                                  <img src="../assets/img/card-sources/glorieta-2.png" alt="" />
-                                </div>
-                                <div id="right-side-bottom">
-                                  <img src="../assets/img/card-sources/glorieta-3.png" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="bottom-body">
-                            <img src="../assets/img/card-sources/glorieta-4.png" alt="" />
-                          </div>
-                        </div>
-                        <div id="border-contour">
-                          <div id="btn-shadow">
-                            <a href="place-details.html" className="btn-more"> <i className="bi bi-search"></i> EXPLORAR</a>
-                          </div>
-                        </div>
-                        <div id="bottom-w-block">
-                        </div>
-                      </div>
-
+                    <div id="bottom-body">
+                      <img src="assets/img/card-sources/glorieta-4.png" alt=""/>
                     </div>
                   </div>
+                  <div id="border-contour">
+                    <div id="btn-shadow">
+                      <a href="place-details.html" class="btn-more"> <i class="bi bi-search"></i> EXPLORAR</a>
+                    </div>
+                  </div>
+                  <div id="bottom-w-block">
+                  </div>
+                </div>
 
+                <div class="cardon" data-aos="zoom-in" data-aos-delay="100">
+                  <div id="top-w-block">
+                  </div>
+                  <div id="card-main-block">
+                    <div id="top-body">
+                      <div id="title-body">
+                        <p>Palacete de</p>
+                        <div class="card-tittle text-center">
+                          <h3 class="send-flowers-regular">La Glorieta</h3>
+                        </div>
+                      </div>
+                      <div id="top-body-content">
+                        <div id="body-left-side">
+                          <img src="assets/img/card-sources/glorieta-1.png" alt=""/>
+                        </div>
+                        <div id="body-right-side">
+                          <div id="right-side-top">
+                            <img src="assets/img/card-sources/glorieta-2.png" alt=""/>
+                          </div>
+                          <div id="right-side-bottom">
+                            <img src="assets/img/card-sources/glorieta-3.png" alt=""/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bottom-body">
+                      <img src="assets/img/card-sources/glorieta-4.png" alt=""/>
+                    </div>
+                  </div>
+                  <div id="border-contour">
+                    <div id="btn-shadow">
+                      <a href="place-details.html" class="btn-more"> <i class="bi bi-search"></i> EXPLORAR</a>
+                    </div>
+                  </div>
+                  <div id="bottom-w-block">
+                  </div>
+                </div>
+
+                <div class="cardon" data-aos="zoom-in" data-aos-delay="100">
+                  <div id="top-w-block">
+                  </div>
+                  <div id="card-main-block">
+                    <div id="top-body">
+                      <div id="title-body">
+                        <p>Palacete de</p>
+                        <div class="card-tittle text-center">
+                          <h3 class="send-flowers-regular">La Glorieta</h3>
+                        </div>
+                      </div>
+                      <div id="top-body-content">
+                        <div id="body-left-side">
+                          <img src="assets/img/card-sources/glorieta-1.png" alt=""/>
+                        </div>
+                        <div id="body-right-side">
+                          <div id="right-side-top">
+                            <img src="assets/img/card-sources/glorieta-2.png" alt=""/>
+                          </div>
+                          <div id="right-side-bottom">
+                            <img src="assets/img/card-sources/glorieta-3.png" alt=""/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bottom-body">
+                      <img src="assets/img/card-sources/glorieta-4.png" alt=""/>
+                    </div>
+                  </div>
+                  <div id="border-contour">
+                    <div id="btn-shadow">
+                      <a href="place-details.html" class="btn-more"> <i class="bi bi-search"></i> EXPLORAR</a>
+                    </div>
+                  </div>
+                  <div id="bottom-w-block">
+                  </div>
+                </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
                 </section>
-
               </div>
+
+
+
+
+
             </div>
           </section>
 
